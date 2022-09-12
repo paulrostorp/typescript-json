@@ -39,6 +39,7 @@ export * from "./TypeGuardError";
  * @author Jeongho Nam - https://github.com/samchon
  */
 export function assertType<T>(input: T): T;
+export function assertType<T>(input: unknown): T;
 
 /**
  * @internal
@@ -91,6 +92,7 @@ export namespace assertType {
  * @author Jeongho Nam - https://github.com/samchon
  */
 export function is<T>(input: T): input is T;
+export function is<T>(input: unknown): input is T;
 
 /**
  * @internal
